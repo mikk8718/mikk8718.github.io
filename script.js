@@ -4,10 +4,7 @@ const words = [
   "foodie",
   "football fan",
   "techie",
-  "maker",
-  "dreamer",
   "designer",
-  "explorer",
   "nerd"
 ];
 
