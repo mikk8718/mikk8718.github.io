@@ -1,0 +1,141 @@
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  :root {
+      --highlight-color: goldenrod;
+  }
+
+  body {
+      background: #121212;
+      color: #e0e0e0;
+      font-family: 'Fira Mono', monospace;
+      line-height: 1.6;
+      padding: 20px;
+  }
+
+  .container {
+      max-width: 1000px;
+      margin: 0 auto;
+  }
+
+  .hero {
+      text-align: center;
+      margin-bottom: 50px;
+  }
+
+  .hero .heading {
+      font-size: 2.5em;
+      font-weight: bold;
+      white-space: nowrap;
+      overflow: hidden;
+      text-align: center;
+      width: 100%;
+      margin-bottom: 10px;
+      display: inline-block;
+  }
+
+  .cursor {
+      display: inline-block;
+      color: #e0e0e0;
+      animation: blink-caret 0.75s step-end infinite;
+  }
+
+  @keyframes blink-caret {
+
+      from,
+      to {
+          opacity: 0;
+      }
+
+      50% {
+          opacity: 1;
+      }
+  }
+
+  .typed-text {
+      color: var(--highlight-color);
+  }
+
+  /* On mobile, allow the heading to wrap if needed */
+  @media (max-width: 600px) {
+      .hero .heading {
+          font-size: 1.8em;
+          white-space: normal;
+      }
+  }
+
+  .special {
+      color: var(--highlight-color);
+      font-weight: bolder;
+      animation: pulse 1s infinite alternate;
+  }
+
+
+
+  section h1 {
+      text-align: center;
+      margin-bottom: 30px;
+  }
+
+  .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-bottom: 30px;
+  }
+
+  .card {
+      background: #272727;
+      border: 1px solid #333;
+      border-radius: 4px;
+      padding: 20px;
+      flex: 1 1 280px;
+      max-width: 300px;
+  }
+
+  .card-header {
+      font-weight: lighter;
+      margin-bottom: 10px;
+      font-size: 1.2em;
+  }
+
+  .card p {
+      font-size: 0.95em;
+      line-height: 1.4;
+      margin: 0;
+  }
+
+  .card p:last-of-type {
+      font-style: italic;
+      color: var(--highlight-color);
+  }
+
+  .contact a {
+      display: inline-flex;
+      align-items: center;
+      color: #e0e0e0;
+      border: 1px solid #e0e0e0;
+      padding: 5px 10px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 1em;
+  }
+
+  .contact a:hover {
+      color: var(--highlight-color);
+
+  }
+
+  .half{
+    flex: 1 1 100%; 
+    max-width: 50%;
+  }
+
+  .full {
+    flex: 1 1 100%; 
+    max-width: 100%;
+  }
