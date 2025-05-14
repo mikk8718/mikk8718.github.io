@@ -97,6 +97,10 @@
       max-width: 300px;
   }
 
+  .max-width {
+    max-width: 100%;
+  }
+
   .card-header {
       font-weight: lighter;
       margin-bottom: 10px;
