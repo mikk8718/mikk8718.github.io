@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,
+                        initial-scale=1.0">
+  <title>Simple portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Mono&amp;display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #121212;
+      color: #e0e0e0;
+      font-family: 'Fira Mono', monospace;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .hero {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .hero .heading {
+      font-size: 2.5em;
+      font-weight: bold;
+      white-space: nowrap;
+      overflow: hidden;
+      text-align: center;
+      width: 100%;
+      margin-bottom: 10px;
+      display: inline-block;
+    }
+
+    .cursor {
+      display: inline-block;
+      color: #e0e0e0;
+      animation: blink-caret 0.75s step-end infinite;
+    }
+
+    @keyframes blink-caret {
+
+      from,
+      to {
+        opacity: 0;
+      }
+
+      50% {
+        opacity: 1;
+      }
+    }
+
+    .typed-text{
+      color:goldenrod;
+    }
+
+    /* On mobile, allow the heading to wrap if needed */
+    @media (max-width: 600px) {
+      .hero .heading {
+        font-size: 1.8em;
+        white-space: normal;
+      }
+    }
+
+    .special {
+      color: goldenrod;
+      font-weight: bolder;
+      animation: pulse 1s infinite alternate;
+    }
+
+    .attributes h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+
+    .card {
+      background: #272727;
+      border: 1px solid #333;
+      border-radius: 4px;
+      padding: 20px;
+      flex: 1 1 280px;
+      max-width: 300px;
+    }
+
+    .card-header {
+      font-weight: lighter;
+      margin-bottom: 10px;
+      font-size: 1.2em;
+    }
+
+    .card p {
+      font-size: 0.95em;
+      line-height: 1.4;
+      margin: 0;
+    }
+
+    .card p:last-of-type {
+      font-style: italic;
+      color: goldenrod;
+    }
+
+    .contact h1 {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .contact a {
+      display: inline-flex;
+      align-items: center;
+      color: #e0e0e0;
+      border: 1px solid #e0e0e0;
+      padding: 5px 10px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 1em;
+    }
+  </style>
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <section class="hero">
+      <span class="heading">Hi I'm Mikkel - <span class="typed-text"></span><span class="cursor">|</span></span>
+
+      <p>I have a Master in Medialogy specialised in interaction, where I was taught about the
+        wonders of technology, <span class="special">but enough about that</span>, you're here because you want to know
+        about me</p>
+    </section>
+    <section class="attributes">
+      <h1>About silly little me</h1>
+      <div class="card-container">
+        <div class="card">
+          <div class="card-header">## My special sauce</div>
+          <p>I’m naturally curious and quick to explore new ideas or technologies. I enjoy testing things hands-on,
+            learning through experimentation,
+            and figuring out what works in practice.<br><br></p>
+          <p>That mindset keeps me adaptable, continuously learning, and eager to contribute in new ways.</p>
+        </div>
+        <div class="card">
+          <div class="card-header">## Personality</div>
+          <p>I’m open-minded, easy to talk to, and enjoy genuine conversations — whether it’s about work, football,
+            food, or life in general. I value spontaneity and humor,
+            but I’m also thoughtful and grounded when it matters.<br><br></p>
+          <p>If we haven’t connected yet, feel free to reach out on LinkedIn — I’m always open to a good chat.
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-header">## How I work</div>
+          <p>I dive deep when learning — from documentation to obscure forum posts — and I apply new knowledge quickly.
+            I focus on building solutions that are not only functional,
+            but thoughtfully designed and maintainable. <br><br></p>
+          <p>I ask questions, challenge assumptions, and try to build with clarity and purpose.</p>
+        </div>
+      </div>
+    </section>
+    <section class="contact">
+      <h1>Hit me up or learn more</h1>
+      <div class="card-container">
+        <a target="_blank" href="https://www.linkedin.com/in/mikkel-sm-baunsgaard/">Linkedln</a>
+        <a target="_blank" href="https://github.com/mikk8718">GitHub</a>
+        <a target="_blank" href="Cv_pages.pdf">Cover Letter</a>      
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>
