@@ -5,7 +5,8 @@ const words = [
   "football fan",
   "techie",
   "designer",
-  "nerd"
+  "nerd",
+  "red devil"
 ];
 
 
