@@ -73,8 +73,6 @@
       animation: pulse 1s infinite alternate;
   }
 
-
-
   section h1 {
       text-align: center;
       margin-bottom: 30px;
@@ -94,11 +92,13 @@
       border-radius: 4px;
       padding: 20px;
       flex: 1 1 280px;
+      display: flex;
+      flex-direction: column;
       max-width: 300px;
   }
 
   .max-width {
-    max-width: 100%;
+      max-width: 100%;
   }
 
   .card-header {
@@ -116,9 +116,10 @@
   .card p:last-of-type {
       font-style: italic;
       color: var(--highlight-color);
+      margin-bottom: 10px;
   }
 
-  .contact a {
+  div a {
       display: inline-flex;
       align-items: center;
       color: #e0e0e0;
@@ -129,17 +130,17 @@
       font-size: 1em;
   }
 
-  .contact a:hover {
+  div a:hover {
       color: var(--highlight-color);
-
   }
 
-  .half{
-    flex: 1 1 100%; 
-    max-width: 50%;
+
+  .pdf-container {
+      margin-top: auto;
+      align-self: flex-end;
   }
 
-  .full {
-    flex: 1 1 100%; 
-    max-width: 100%;
+  .pdf-container a {
+      margin-right: auto;
+      margin-top: 20px;
   }
