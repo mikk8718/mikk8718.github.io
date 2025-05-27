@@ -103,11 +103,13 @@
       margin-bottom: 0px;
   }
 
+
+
   .experience:hover h1{
       color: var(--highlight-color);
   }
 
-  .experience:hover div:last-of-type, .experience:active div:last-of-type {
+  .experience:hover div:last-of-type {
       max-height: 200px;
       opacity: 1;
       padding-top: 0.5em;
@@ -127,6 +129,19 @@
   .experience ul{
     padding-top: 2px;
   }
+
+
+@media (hover: hover) and (pointer: fine) {
+  .experience:hover h1 {
+    color: var(--highlight-color);
+  }
+
+  .experience:hover div:last-of-type {
+    max-height: 200px;
+    opacity: 1;
+    padding-top: 0.5em;
+  }
+}
 
   .card-container {
       display: flex;
@@ -190,6 +205,7 @@
       align-self: flex-end;
   }
 
+  /* hello */
   .pdf-container a {
       margin-right: auto;
       margin-top: 20px;
