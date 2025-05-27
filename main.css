@@ -121,11 +121,19 @@
   .experience ul {
       padding-top: 2px;
   }
-@media(hover: hover) and (pointer: fine) {
-    body {
-        color:var(--highlight-color);
-    }
-}
+
+    @media (max-width: 600px) {
+      .skills-container {
+          flex-direction: column;
+          align-items: center;
+      }
+
+      .experience div:last-of-type {
+          max-height: 200px;
+          opacity: 1;
+          padding-top: 0.5em;
+      }
+  }
 
   .card-container {
       display: flex;
