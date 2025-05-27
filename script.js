@@ -1,5 +1,3 @@
-document.addEventListener("touchstart", function() {}, true);
-
 const words = [
   "coder",
   "enthusiast",

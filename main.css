@@ -81,29 +81,23 @@
   }
 
   .skills-container {
-    display:flex;
-    justify-content: space-evenly;
-    gap: 2rem;
-    margin-bottom: 30px;
+      display: flex;
+      justify-content: space-evenly;
+      gap: 2rem;
+      margin-bottom: 30px;
   }
-
-  @media (max-width: 600px) {
-  .skills-container {
-    flex-direction: column;
-    align-items: center;
-  }
-}
 
   .skills-container h1 {
-    margin-bottom: 0px;
-    color: var(--highlight-color);
+      margin-bottom: 0px;
+      color: var(--highlight-color);
   }
+
   .experience h1 {
       text-align: start;
       margin-bottom: 0px;
   }
 
-  .experience:hover h1{
+  .experience:hover h1 {
       color: var(--highlight-color);
   }
 
@@ -124,9 +118,14 @@
           padding var(--transition-speed-cv) ease;
   }
 
-  .experience ul{
-    padding-top: 2px;
+  .experience ul {
+      padding-top: 2px;
   }
+@media(hover: hover) and (pointer: fine) {
+    body {
+        color:var(--highlight-color);
+    }
+}
 
   .card-container {
       display: flex;
