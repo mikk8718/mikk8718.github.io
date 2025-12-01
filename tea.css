@@ -16,7 +16,7 @@ body {
 .tea-day {
     display: flex;
     gap: 40px;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-start;
     background: transparent;
     padding: 0;
