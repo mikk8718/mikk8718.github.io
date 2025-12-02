@@ -115,11 +115,9 @@ body {
     box-shadow: 0 0 5px rgba(139, 69, 19, 0.2);
 }
 
- hr { 
-            height: 4px; 
-            background-color: red; 
-            border: none; 
-        } 
+hr {
+    width: 20%;
+}
 
 /* Mobile responsiv */
 @media (max-width: 768px) {
