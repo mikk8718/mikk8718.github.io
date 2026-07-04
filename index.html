@@ -3,62 +3,232 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,
-                        initial-scale=1.0">
-  <title>Mikkel Sang Mee</title>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Mono&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="main.css?v=2">
-  <script src="script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="testing.css?v=10">
+  <title>Mikkel Sang Mee Baunsgaard - Portfolio</title>
 </head>
 
 <body>
-  <div class="container">
-    <section class="hero">
-      <span class="heading">Hello I'm Mikkel - <span class="typed-text"></span><span class="cursor">|</span></span>
-      <p>I have a Master in Medialogy specialised in interaction, where I was taught about the
-        wonders of technology, <span class="special">but enough about that</span>, you're here because you want to know
-        about me</p>
-    </section>
-    <section class="attributes">
-      <h1>About me</h1>
-      <div class="card-container">
-        <div class="card">
-          <div class="card-header">## My approach</div>
-          <p>I’m naturally curious and quick to explore new ideas or technologies. I enjoy testing things hands-on,
-            learning through experimentation,
-            and figuring out what works in practice.<br><br></p>
-          <p>That mindset keeps me adaptable, continuously learning, and eager to contribute in new ways.</p>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="index.html">Mikkel Sang Mee</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#life">Life</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Software Developer &amp; Medialogist</p>
+        <h1 id="hero-title">
+          <span>Hi, I am Mikkel.</span>
+          <span>Curious, social, and happiest when ideas become useful.</span>
+        </h1>
+        <p class="hero-text">
+          I work at the intersection of technology, users, and business needs. Just as importantly, I bring energy,
+          openness, and a genuine interest in the people I build things with.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#about">Meet me</a>
+          <a class="button secondary" href="mailto:baunsgaard38@gmail.com">Get in touch</a>
         </div>
-        <div class="card">
-          <div class="card-header">## Personality</div>
-          <p>I’m open-minded, easy to talk to, and enjoy genuine conversations — whether it’s about work, football,
-            food, or life in general. I value spontaneity and humor,
-            but I’m also thoughtful and grounded when it matters.<br><br></p>
-          <p>If we haven’t connected yet, feel free to reach out on LinkedIn or mail — I’m always open to a good chat.
+      </div>
+
+      <div class="portrait-wrap" aria-label="Portrait of Mikkel Sang Mee Baunsgaard">
+        <img src="me.png" alt="Portrait of Mikkel Sang Mee Baunsgaard">
+        <span class="orbit-note note-one">social</span>
+        <span class="orbit-note note-two">curious</span>
+        <span class="orbit-note note-three">hands-on</span>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section id="about" class="section about-section" aria-labelledby="about-title">
+      <div class="section-heading">
+        <p class="eyebrow">Who you get</p>
+        <h2 id="about-title">An outgoing developer who likes clarity, momentum, and good conversations.</h2>
+      </div>
+
+      <div class="value-flow">
+        <article class="value-item">
+          <div class="value-signal signal-social" aria-hidden="true">
+            <i></i>
+            <i></i>
+            <i></i>
+          </div>
+          <span>01</span>
+          <h3>Social by nature</h3>
+          <p>
+            I enjoy meeting people, asking questions, and making collaboration feel easy. Work gets better when people
+            feel comfortable sharing what they know.
+          </p>
+        </article>
+        <article class="value-item">
+          <div class="value-signal signal-curious" aria-hidden="true">
+            <i></i>
+            <i></i>
+            <i></i>
+          </div>
+          <span>02</span>
+          <h3>Curious in practice</h3>
+          <p>
+            I like understanding systems from both sides: the technical architecture behind them and the people who
+            need them to make sense.
+          </p>
+        </article>
+        <article class="value-item">
+          <div class="value-signal signal-calm" aria-hidden="true">
+            <i></i>
+            <i></i>
+            <i></i>
+          </div>
+          <span>03</span>
+          <h3>Calm ownership</h3>
+          <p>
+            I care about maintainable solutions, clear communication, and taking responsibility without making things
+            heavier than they need to be.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="life" class="section life-section" aria-labelledby="life-title">
+      <div class="section-heading">
+        <p class="eyebrow">Outside the editor</p>
+        <h2 id="life-title">A lot of my best energy comes from movement, music, and being around people.</h2>
+      </div>
+
+      <div class="life-grid">
+        <article class="life-item disc">
+          <div class="motion-shape disc-flight" aria-hidden="true"></div>
+          <span>01</span>
+          <h3>Disc golf</h3>
+          <p>Fresh air, small adjustments, and the satisfaction of a clean throw.</p>
+        </article>
+        <article class="life-item run">
+          <div class="motion-shape stride-marks" aria-hidden="true">
+            <i></i>
+            <i></i>
+            <i></i>
+          </div>
+          <span>02</span>
+          <h3>Running</h3>
+          <p>A simple way to reset, think clearly, and keep momentum in the week.</p>
+        </article>
+        <article class="life-item boulder">
+          <div class="motion-shape holds" aria-hidden="true">
+            <i></i>
+            <i></i>
+            <i></i>
+          </div>
+          <span>03</span>
+          <h3>Bouldering</h3>
+          <p>Problem solving with your whole body, which is probably why it fits me so well.</p>
+        </article>
+        <article class="life-item records">
+          <div class="motion-shape record-spin" aria-hidden="true"></div>
+          <span>04</span>
+          <h3>Records</h3>
+          <p>Putting on a record slows the room down in the best possible way.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="work" class="section work-section" aria-labelledby="work-title">
+      <div class="section-heading">
+        <p class="eyebrow">Professional shape</p>
+        <h2 id="work-title">Full-stack development with a strong interest in intuitive user experiences.</h2>
+      </div>
+
+      <div class="work-layout">
+        <div class="profile-copy">
+          <p>
+            My background combines software development, Medialogy, UX understanding, and communication. I have worked
+            with backend systems, APIs, databases, frontend implementation, QA, and collaboration with stakeholders.
+          </p>
+          <p>
+            The common thread is simple: I like turning complex requirements into usable products that people can
+            understand, trust, and maintain.
           </p>
         </div>
-        <div class="card">
-          <div class="card-header">## How I work</div>
-          <p>I dive deep when learning — from documentation to obscure forum posts — and I apply new knowledge quickly.
-            I focus on building solutions that are not only functional,
-            but thoughtfully designed and maintainable. <br><br></p>
-          <p>I ask questions, challenge assumptions, and try to build with clarity and purpose.</p>
+
+        <div class="competence-list" aria-label="Key competences">
+          <article>
+            <span>Build</span>
+            <h3>Full-stack development</h3>
+            <p>Backend, frontend, databases, APIs, testing, and deployment workflows.</p>
+          </article>
+          <article>
+            <span>Shape</span>
+            <h3>Architecture &amp; quality</h3>
+            <p>Maintainable architecture, reusable solutions, documentation, and long-term software quality.</p>
+          </article>
+          <article>
+            <span>Share</span>
+            <h3>Collaboration</h3>
+            <p>Comfortable working with developers, designers, stakeholders, and clients in agile environments.</p>
+          </article>
         </div>
       </div>
     </section>
-    
-    <section class="contact">
-      <h1>Hit me up or learn more</h1>
-      <div class="card-container">
-        <a href="projects.html">University Projects</a>      
-        <a target="_blank" href="https://footballapi.sangmee.dk/__docs__/">API</a>
-        <a href="cv.html">CV</a>      
-        <a target="_blank" href="https://www.linkedin.com/in/mikkel-sm-baunsgaard/">Linkedin</a>
-        <a target="_blank" href="https://github.com/mikk8718">GitHub</a>
-        <a target="_blank" href="mailto:baunsgaard38@gmail.com">Mail</a> 
+
+    <section class="section skills-section" aria-labelledby="skills-title">
+      <div class="section-heading">
+        <p class="eyebrow">Toolkit</p>
+        <h2 id="skills-title">Tools and technologies I have worked with.</h2>
+      </div>
+
+      <div class="skill-stream" aria-label="Technologies and methods">
+        <div class="skill-track">
+          <span>C#</span>
+          <span>.NET</span>
+          <span>Java</span>
+          <span>Spring Boot</span>
+          <span>React</span>
+          <span>TypeScript</span>
+          <span>JavaScript</span>
+          <span>SQL</span>
+          <span>PostgreSQL</span>
+          <span>MongoDB</span>
+          <span>Docker</span>
+          <span>Figma</span>
+          <span>UX/UI design</span>
+          <span aria-hidden="true">C#</span>
+          <span aria-hidden="true">.NET</span>
+          <span aria-hidden="true">Java</span>
+          <span aria-hidden="true">Spring Boot</span>
+          <span aria-hidden="true">React</span>
+          <span aria-hidden="true">TypeScript</span>
+          <span aria-hidden="true">JavaScript</span>
+          <span aria-hidden="true">SQL</span>
+          <span aria-hidden="true">PostgreSQL</span>
+          <span aria-hidden="true">MongoDB</span>
+          <span aria-hidden="true">Docker</span>
+          <span aria-hidden="true">Figma</span>
+          <span aria-hidden="true">UX/UI design</span>
+        </div>
       </div>
     </section>
-  </div>
+  </main>
+
+  <footer id="contact" class="footer">
+    <div>
+      <p class="eyebrow">Get in touch</p>
+      <h2>Always open to a good chat about software, people, music, sport, or where the next idea could go.</h2>
+    </div>
+    <div class="footer-links">
+      <a href="mailto:baunsgaard38@gmail.com">Mail</a>
+      <a href="https://www.linkedin.com/in/mikkel-sm-baunsgaard/" target="_blank" rel="noreferrer">LinkedIn</a>
+      <a href="https://github.com/mikk8718" target="_blank" rel="noreferrer">GitHub</a>
+    </div>
+  </footer>
 </body>
 
 </html>
