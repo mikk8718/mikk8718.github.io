@@ -4,10 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>document.documentElement.classList.add("js");</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="testing.css?v=10">
+  <link rel="stylesheet" href="testing.css?v=14">
+  <script src="script.js?v=4" defer></script>
   <title>Mikkel Sang Mee Baunsgaard - Portfolio</title>
 </head>
 
@@ -28,10 +30,10 @@
         <p class="eyebrow">Software Developer &amp; Medialogist</p>
         <h1 id="hero-title">
           <span>Hi, I am Mikkel.</span>
-          <span>Curious, social, and happiest when ideas become useful.</span>
+          <span><strong>Curious</strong>, <em>social</em>, and happiest when ideas become <strong>useful</strong>.</span>
         </h1>
         <p class="hero-text">
-          I work at the intersection of technology, users, and business needs. Just as importantly, I bring energy,
+          I work at the intersection of <strong>technology</strong>, <em>users</em>, and business needs. Just as importantly, I bring <strong>energy</strong>,
           openness, and a genuine interest in the people I build things with.
         </p>
         <div class="hero-actions">
@@ -53,7 +55,7 @@
     <section id="about" class="section about-section" aria-labelledby="about-title">
       <div class="section-heading">
         <p class="eyebrow">Who you get</p>
-        <h2 id="about-title">An outgoing developer who likes clarity, momentum, and good conversations.</h2>
+        <h2 id="about-title">An outgoing developer who likes <strong>clarity</strong>, <em>momentum</em>, and good conversations.</h2>
       </div>
 
       <div class="value-flow">
@@ -66,7 +68,7 @@
           <span>01</span>
           <h3>Social by nature</h3>
           <p>
-            I enjoy meeting people, asking questions, and making collaboration feel easy. Work gets better when people
+            I enjoy meeting people, asking questions, and making <strong>collaboration</strong> feel easy. Work gets better when people
             feel comfortable sharing what they know.
           </p>
         </article>
@@ -79,7 +81,7 @@
           <span>02</span>
           <h3>Curious in practice</h3>
           <p>
-            I like understanding systems from both sides: the technical architecture behind them and the people who
+            I like understanding systems from both sides: the <em>technical architecture</em> behind them and the people who
             need them to make sense.
           </p>
         </article>
@@ -92,7 +94,7 @@
           <span>03</span>
           <h3>Calm ownership</h3>
           <p>
-            I care about maintainable solutions, clear communication, and taking responsibility without making things
+            I care about <strong>maintainable solutions</strong>, clear communication, and taking responsibility without making things
             heavier than they need to be.
           </p>
         </article>
@@ -102,41 +104,29 @@
     <section id="life" class="section life-section" aria-labelledby="life-title">
       <div class="section-heading">
         <p class="eyebrow">Outside the editor</p>
-        <h2 id="life-title">A lot of my best energy comes from movement, music, and being around people.</h2>
+        <h2 id="life-title">A lot of my best energy comes from <strong>movement</strong>, <em>music</em>, and being around people.</h2>
       </div>
 
       <div class="life-grid">
         <article class="life-item disc">
-          <div class="motion-shape disc-flight" aria-hidden="true"></div>
           <span>01</span>
           <h3>Disc golf</h3>
-          <p>Fresh air, small adjustments, and the satisfaction of a clean throw.</p>
+          <p>Fresh air, <em>small adjustments</em>, and the satisfaction of a clean throw.</p>
         </article>
         <article class="life-item run">
-          <div class="motion-shape stride-marks" aria-hidden="true">
-            <i></i>
-            <i></i>
-            <i></i>
-          </div>
           <span>02</span>
           <h3>Running</h3>
-          <p>A simple way to reset, think clearly, and keep momentum in the week.</p>
+          <p>A simple way to <strong>reset</strong>, think clearly, and keep momentum in the week.</p>
         </article>
         <article class="life-item boulder">
-          <div class="motion-shape holds" aria-hidden="true">
-            <i></i>
-            <i></i>
-            <i></i>
-          </div>
           <span>03</span>
           <h3>Bouldering</h3>
-          <p>Problem solving with your whole body, which is probably why it fits me so well.</p>
+          <p><strong>Problem solving</strong> with your whole body, which is probably why it fits me so well.</p>
         </article>
         <article class="life-item records">
-          <div class="motion-shape record-spin" aria-hidden="true"></div>
           <span>04</span>
           <h3>Records</h3>
-          <p>Putting on a record slows the room down in the best possible way.</p>
+          <p>Putting on a record <em>slows the room down</em> in the best possible way.</p>
         </article>
       </div>
     </section>
@@ -144,37 +134,48 @@
     <section id="work" class="section work-section" aria-labelledby="work-title">
       <div class="section-heading">
         <p class="eyebrow">Professional shape</p>
-        <h2 id="work-title">Full-stack development with a strong interest in intuitive user experiences.</h2>
+        <h2 id="work-title"><strong>Full-stack</strong> development with a strong interest in <em>intuitive</em> user experiences.</h2>
       </div>
 
       <div class="work-layout">
-        <div class="profile-copy">
-          <p>
-            My background combines software development, Medialogy, UX understanding, and communication. I have worked
+        <div class="profile-copy" aria-live="polite">
+          <div class="work-tags" aria-label="Current work focus">
+            <span>Systems</span>
+            <span>APIs</span>
+            <span>Frontend</span>
+          </div>
+          <p id="work-copy-primary">
+            My background combines <strong>software development</strong>, Medialogy, UX understanding, and communication. I have worked
             with backend systems, APIs, databases, frontend implementation, QA, and collaboration with stakeholders.
           </p>
-          <p>
-            The common thread is simple: I like turning complex requirements into usable products that people can
+          <p id="work-copy-secondary">
+            The common thread is simple: I like turning <em>complex requirements</em> into usable products that people can
             understand, trust, and maintain.
           </p>
         </div>
 
         <div class="competence-list" aria-label="Key competences">
-          <article>
-            <span>Build</span>
-            <h3>Full-stack development</h3>
-            <p>Backend, frontend, databases, APIs, testing, and deployment workflows.</p>
-          </article>
-          <article>
-            <span>Shape</span>
-            <h3>Architecture &amp; quality</h3>
-            <p>Maintainable architecture, reusable solutions, documentation, and long-term software quality.</p>
-          </article>
-          <article>
-            <span>Share</span>
-            <h3>Collaboration</h3>
-            <p>Comfortable working with developers, designers, stakeholders, and clients in agile environments.</p>
-          </article>
+          <button class="competence-card is-active" type="button" data-work-key="build" aria-pressed="true">
+            <span class="competence-kicker">Build</span>
+            <span class="competence-content">
+              <strong class="competence-title">Full-stack development</strong>
+              <span class="competence-text">Backend, frontend, databases, APIs, testing, and deployment workflows.</span>
+            </span>
+          </button>
+          <button class="competence-card" type="button" data-work-key="shape" aria-pressed="false">
+            <span class="competence-kicker">Shape</span>
+            <span class="competence-content">
+              <strong class="competence-title">Architecture &amp; quality</strong>
+              <span class="competence-text">Maintainable architecture, reusable solutions, documentation, and long-term software quality.</span>
+            </span>
+          </button>
+          <button class="competence-card" type="button" data-work-key="share" aria-pressed="false">
+            <span class="competence-kicker">Share</span>
+            <span class="competence-content">
+              <strong class="competence-title">Collaboration</strong>
+              <span class="competence-text">Comfortable working with developers, designers, stakeholders, and clients in agile environments.</span>
+            </span>
+          </button>
         </div>
       </div>
     </section>
@@ -182,7 +183,7 @@
     <section class="section skills-section" aria-labelledby="skills-title">
       <div class="section-heading">
         <p class="eyebrow">Toolkit</p>
-        <h2 id="skills-title">Tools and technologies I have worked with.</h2>
+        <h2 id="skills-title">Tools and <strong>technologies</strong> I have worked with.</h2>
       </div>
 
       <div class="skill-stream" aria-label="Technologies and methods">
@@ -214,6 +215,28 @@
           <span aria-hidden="true">Figma</span>
           <span aria-hidden="true">UX/UI design</span>
         </div>
+        <div class="skill-track skill-track-soft" aria-label="Soft skills">
+          <span>Communication</span>
+          <span>Collaboration</span>
+          <span>Curiosity</span>
+          <span>Adaptability</span>
+          <span>Problem solving</span>
+          <span>Empathy</span>
+          <span>Ownership</span>
+          <span>Creativity</span>
+          <span>Facilitation</span>
+          <span>Documentation</span>
+          <span aria-hidden="true">Communication</span>
+          <span aria-hidden="true">Collaboration</span>
+          <span aria-hidden="true">Curiosity</span>
+          <span aria-hidden="true">Adaptability</span>
+          <span aria-hidden="true">Problem solving</span>
+          <span aria-hidden="true">Empathy</span>
+          <span aria-hidden="true">Ownership</span>
+          <span aria-hidden="true">Creativity</span>
+          <span aria-hidden="true">Facilitation</span>
+          <span aria-hidden="true">Documentation</span>
+        </div>
       </div>
     </section>
   </main>
@@ -221,7 +244,7 @@
   <footer id="contact" class="footer">
     <div>
       <p class="eyebrow">Get in touch</p>
-      <h2>Always open to a good chat about software, people, music, sport, or where the next idea could go.</h2>
+      <h2>Always open to a good chat about <strong>software</strong>, people, <em>music</em>, sport, or where the next idea could go.</h2>
     </div>
     <div class="footer-links">
       <a href="mailto:baunsgaard38@gmail.com">Mail</a>
