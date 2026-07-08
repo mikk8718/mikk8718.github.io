@@ -14,6 +14,15 @@
 </head>
 
 <body>
+  <nav class="section-rail" aria-label="Section progress">
+    <a href="#home" data-section-marker="home" aria-label="Hero"><span>Hero</span></a>
+    <a href="#about" data-section-marker="about" aria-label="About"><span>About</span></a>
+    <a href="#life" data-section-marker="life" aria-label="Life"><span>Life</span></a>
+    <a href="#work" data-section-marker="work" aria-label="Work"><span>Work</span></a>
+    <a href="#skills" data-section-marker="skills" aria-label="Toolkit"><span>Toolkit</span></a>
+    <a href="#contact" data-section-marker="contact" aria-label="Contact"><span>Contact</span></a>
+  </nav>
+
   <header class="site-header">
     <nav class="nav" aria-label="Primary navigation">
       <a class="brand" href="/">Mikkel Sang Mee</a>
@@ -25,12 +34,12 @@
       </div>
     </nav>
 
-    <section class="hero" aria-labelledby="hero-title">
+    <section id="home" class="hero" aria-labelledby="hero-title" data-rail-section>
       <div class="hero-copy">
         <p class="eyebrow">Software Developer &amp; Medialogist</p>
-        <h1 id="hero-title">
-          <span>Hi, I am Mikkel.</span>
-          <span><strong>Curious</strong>, <em>social</em>, and happiest when ideas become <strong>useful</strong>.</span>
+        <h1 id="hero-title" class="typewriter-group" aria-label="Hi, I am Mikkel. Curious, social, and happiest when ideas become useful.">
+          <span data-typewriter-item>Hi, I am Mikkel.</span>
+          <span data-typewriter-item><strong>Curious</strong>, <em>social</em>, and happiest when ideas become <strong>useful</strong>.</span>
         </h1>
         <p class="hero-text">
           I work at the intersection of <strong>technology</strong>, <em>users</em>, and business needs. Just as importantly, I bring <strong>energy</strong>,
@@ -52,7 +61,7 @@
   </header>
 
   <main>
-    <section id="about" class="section about-section" aria-labelledby="about-title">
+    <section id="about" class="section about-section" aria-labelledby="about-title" data-rail-section>
       <div class="section-heading">
         <p class="eyebrow">Who you get</p>
         <h2 id="about-title">An outgoing developer who likes <strong>clarity</strong>, <em>momentum</em>, and good conversations.</h2>
@@ -101,7 +110,7 @@
       </div>
     </section>
 
-    <section id="life" class="section life-section" aria-labelledby="life-title">
+    <section id="life" class="section life-section" aria-labelledby="life-title" data-rail-section>
       <div class="section-heading">
         <p class="eyebrow">Outside the editor</p>
         <h2 id="life-title">A lot of my best energy comes from <strong>movement</strong>, <em>music</em>, and being around people.</h2>
@@ -131,7 +140,7 @@
       </div>
     </section>
 
-    <section id="work" class="section work-section" aria-labelledby="work-title">
+    <section id="work" class="section work-section" aria-labelledby="work-title" data-rail-section>
       <div class="section-heading">
         <p class="eyebrow">Professional shape</p>
         <h2 id="work-title"><strong>Full-stack</strong> development with a strong interest in <em>intuitive</em> user experiences.</h2>
@@ -180,7 +189,7 @@
       </div>
     </section>
 
-    <section class="section skills-section" aria-labelledby="skills-title">
+    <section id="skills" class="section skills-section" aria-labelledby="skills-title" data-rail-section>
       <div class="section-heading">
         <p class="eyebrow">Toolkit</p>
         <h2 id="skills-title">Tools and <strong>technologies</strong> I have worked with.</h2>
@@ -241,15 +250,27 @@
     </section>
   </main>
 
-  <footer id="contact" class="footer">
-    <div>
+  <footer id="contact" class="footer" data-rail-section>
+    <div class="footer-intro">
       <p class="eyebrow">Get in touch</p>
       <h2>Always open to a good chat about <strong>software</strong>, people, <em>music</em>, sport, or where the next idea could go.</h2>
+      <p class="footer-note">
+        The easiest way to start is usually a small message: what you are building, what feels unclear, or what kind of conversation would be useful.
+        I like notes that leave room for a bit of context, a bit of curiosity, and a clear next step.
+      </p>
     </div>
-    <div class="footer-links">
-      <a href="mailto:baunsgaard38@gmail.com">Mail</a>
-      <a href="https://www.linkedin.com/in/mikkel-sm-baunsgaard/" target="_blank" rel="noreferrer">LinkedIn</a>
-      <a href="https://github.com/mikk8718" target="_blank" rel="noreferrer">GitHub</a>
+
+    <div class="contact-panel" aria-label="Contact options">
+      <div class="contact-notes">
+        <p><strong>Good openings:</strong> product ideas, UX puzzles, backend questions, collaboration, music, sport, or a coffee and a loose sketch.</p>
+        <p><strong>Usually helpful:</strong> a few lines about the situation, the people involved, and what would make the next conversation worthwhile.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="mailto:baunsgaard38@gmail.com">Mail</a>
+        <a href="https://www.linkedin.com/in/mikkel-sm-baunsgaard/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://github.com/mikk8718" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
     </div>
   </footer>
 </body>
