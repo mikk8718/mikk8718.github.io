@@ -6,25 +6,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="testing.css?v=36">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="testing.css?v=37">
+  <script src="script.js" defer></script>
   <script async src="https://betterlytics.io/analytics.js" data-site-id="sangmee-mrgqpcd5"></script>
   <title>Mikkel Sang Mee Baunsgaard — Portfolio</title>
 </head>
 
 <body>
-  <a class="skip-link" href="#home">Skip navigation</a>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <nav class="nav" aria-label="Primary navigation">
+    <a class="brand" href="#home" data-section-marker="home">Index / Sang Mee</a>
+    <div class="nav-links">
+      <a href="#about" data-section-marker="about">01 About</a>
+      <a href="#life" data-section-marker="life">02 Life</a>
+      <a href="#work" data-section-marker="work">03 Work</a>
+      <a href="#skills" data-section-marker="skills">04 Toolkit</a>
+      <a href="#contact" data-section-marker="contact">05 Contact</a>
+    </div>
+  </nav>
+
   <header class="site-header">
-    <nav class="nav" aria-label="Primary navigation">
-      <a class="brand" href="#home">Index / Sang Mee</a>
-      <div class="nav-links">
-        <a href="#about">01 About</a>
-        <a href="#life">02 Life</a>
-        <a href="#work">03 Work</a>
-        <a href="#skills">04 Toolkit</a>
-        <a href="#contact">05 Contact</a>
-      </div>
-    </nav>
 
     <section id="home" class="hero" aria-labelledby="hero-title" data-rail-section>
       <div class="hero-copy">
@@ -47,7 +49,7 @@
     </section>
   </header>
 
-  <main>
+  <main id="main-content" tabindex="-1">
     <section id="about" class="section about-section" aria-labelledby="about-title" data-rail-section>
       <div class="section-heading">
         <p class="chapter-number">01 / About</p>
@@ -86,6 +88,13 @@
           <h3>Calm ownership</h3>
           <p><strong>Clear, maintainable</strong> solutions without unnecessary weight.</p>
         </article>
+        <details class="about-more">
+          <summary>Read more about me</summary>
+          <div>
+            <p>I am a software developer and medialogist who likes working where technical decisions meet real human needs.</p>
+            <p>I enjoy moving between implementation, design conversations, and the practical work of making a solution understandable and maintainable.</p>
+          </div>
+        </details>
       </div>
     </section>
 
@@ -97,26 +106,22 @@
       </div>
 
       <div class="life-grid">
-        <article class="life-item disc">
-          <span>01</span>
-          <h3>Disc golf</h3>
-          <p>Fresh air and <em>small adjustments</em>.</p>
-        </article>
-        <article class="life-item run">
-          <span>02</span>
-          <h3>Running</h3>
-          <p>A simple way to <strong>reset</strong>.</p>
-        </article>
-        <article class="life-item boulder">
-          <span>03</span>
-          <h3>Bouldering</h3>
-          <p><strong>Problem solving</strong> with your whole body.</p>
-        </article>
-        <article class="life-item records">
-          <span>04</span>
-          <h3>Records</h3>
-          <p>A good way to <em>slow the room down</em>.</p>
-        </article>
+        <details class="life-item disc">
+          <summary><span>01</span><strong class="life-title">Disc golf</strong><span class="life-intro">Fresh air and <em>small adjustments</em>.</span></summary>
+          <p class="life-detail">A social game where patience and tiny changes in technique make a visible difference.</p>
+        </details>
+        <details class="life-item run">
+          <summary><span>02</span><strong class="life-title">Running</strong><span class="life-intro">A simple way to <strong>reset</strong>.</span></summary>
+          <p class="life-detail">Time away from screens, with space to think—or not think at all.</p>
+        </details>
+        <details class="life-item boulder">
+          <summary><span>03</span><strong class="life-title">Bouldering</strong><span class="life-intro"><strong>Problem solving</strong> with your whole body.</span></summary>
+          <p class="life-detail">I like the mix of experimentation, movement, and sharing solutions with others.</p>
+        </details>
+        <details class="life-item records">
+          <summary><span>04</span><strong class="life-title">Records</strong><span class="life-intro">A good way to <em>slow the room down</em>.</span></summary>
+          <p class="life-detail">Listening to an album from start to finish turns music into a deliberate pause.</p>
+        </details>
       </div>
     </section>
 
@@ -134,26 +139,22 @@
             <h3 id="experience-title">Enterprise systems to client delivery.</h3>
           </div>
           <div class="experience-list">
-            <article>
-              <span>2026—Now</span>
-              <div><p>Keramikværkstedet Viborg</p><h4>Freelance Web &amp; E-commerce Consultant</h4></div>
-              <p>Led the website from Figma and platform selection through Dandomain implementation, launch, and ongoing support.</p>
-            </article>
-            <article>
-              <span>2026</span>
-              <div><p>Netcompany</p><h4>IT Consultant · Full-stack Developer</h4></div>
-              <p>Built enterprise features with Java, Spring Boot, React, TypeScript, PostgreSQL, and MongoDB.</p>
-            </article>
-            <article>
-              <span>2024—25</span>
-              <div><p>Skagenfood</p><h4>IT Worker</h4></div>
-              <p>Improved CMS/PIM workflows, webshop content, and internal processes with JavaScript tools.</p>
-            </article>
-            <article>
-              <span>2024</span>
-              <div><p>Netcompany</p><h4>IT Consultant · Backend Developer</h4></div>
-              <p>Designed a C# and Entity Framework Core solution for payment-agreement migration and integration.</p>
-            </article>
+            <details>
+              <summary><span>2026—Now</span><span class="experience-role"><span>Keramikværkstedet Viborg</span><strong>Freelance Web &amp; E-commerce Consultant</strong></span><span class="experience-intro">Led the website from Figma and platform selection through Dandomain implementation, launch, and ongoing support.</span></summary>
+              <div class="experience-detail"><p><strong>Tasks</strong> Concept development, platform research, interface design, implementation, and launch.</p><p><strong>Responsibility</strong> Owned the full delivery and ongoing operation in close dialogue with the client.</p><p><strong>Result</strong> A live e-commerce site the business can maintain and develop further.</p></div>
+            </details>
+            <details>
+              <summary><span>2026</span><span class="experience-role"><span>Netcompany</span><strong>IT Consultant · Full-stack Developer</strong></span><span class="experience-intro">Built enterprise features with Java, Spring Boot, React, TypeScript, PostgreSQL, and MongoDB.</span></summary>
+              <div class="experience-detail"><p><strong>Tasks</strong> Developed and connected frontend, backend, and data-layer features.</p><p><strong>Responsibility</strong> Contributed production-ready code within a larger enterprise system and delivery team.</p><p><strong>Result</strong> Features delivered across the stack with attention to maintainability and existing architecture.</p></div>
+            </details>
+            <details>
+              <summary><span>2024—25</span><span class="experience-role"><span>Skagenfood</span><strong>IT Worker</strong></span><span class="experience-intro">Improved CMS/PIM workflows, webshop content, and internal processes with JavaScript tools.</span></summary>
+              <div class="experience-detail"><p><strong>Tasks</strong> Maintained product data, webshop content, visual assets, app QA, and GDPR checks.</p><p><strong>Responsibility</strong> Kept information accurate across systems and built small JavaScript tools for repetitive work.</p><p><strong>Result</strong> Clearer content and smoother internal product-data workflows.</p></div>
+            </details>
+            <details>
+              <summary><span>2024</span><span class="experience-role"><span>Netcompany</span><strong>IT Consultant · Backend Developer</strong></span><span class="experience-intro">Designed a C# and Entity Framework Core solution for payment-agreement migration and integration.</span></summary>
+              <div class="experience-detail"><p><strong>Tasks</strong> Modelled the database, implemented migration logic, and integrated external APIs.</p><p><strong>Responsibility</strong> Designed and documented the backend solution in .NET/C# and SQL.</p><p><strong>Result</strong> A structured migration flow for payment-agreement data.</p></div>
+            </details>
           </div>
         </section>
 
@@ -202,12 +203,12 @@
             <h3>Earlier interactive systems</h3>
           </div>
           <div class="project-grid">
-            <article><span>OpenCV · Play</span><h4>Battleships</h4><p>Teaching history through physical-digital play.</p><a href="PDF/P3.pdf" target="_blank" rel="noreferrer" aria-label="View Battleships project PDF">View PDF ↗</a></article>
-            <article><span>Arduino · Audio</span><h4>Sound-Box</h4><p>Immersive audio for tabletop games.</p><a href="PDF/P4.pdf" target="_blank" rel="noreferrer" aria-label="View Sound-Box project PDF">View PDF ↗</a></article>
-            <article><span>Unity · VR</span><h4>Rock Art</h4><p>A hand-tracked cultural experience.</p><a href="PDF/P6.pdf" target="_blank" rel="noreferrer" aria-label="View Rock Art project PDF">View PDF ↗</a></article>
-            <article><span>TensorFlow · ML</span><h4>Timbre Transfer</h4><p>Neural transformation of musical sound.</p><a href="PDF/P7.pdf" target="_blank" rel="noreferrer" aria-label="View Timbre Transfer project PDF">View PDF ↗</a></article>
-            <article><span>Unreal · C++</span><h4>Architectural VR</h4><p>Exploring sustainable design in VR.</p><a href="PDF/P8.pdf" target="_blank" rel="noreferrer" aria-label="View Architectural VR project PDF">View PDF ↗</a></article>
-            <article><span>Unreal · Interaction</span><h4>Thrust Pointing</h4><p>Full-body pointing for virtual reality.</p><a href="PDF/P10.pdf" target="_blank" rel="noreferrer" aria-label="View Thrust Pointing project PDF">View PDF ↗</a></article>
+            <details><summary><span>OpenCV · Play</span><strong class="project-title">Battleships</strong><span class="project-intro">Teaching history through physical-digital play.</span></summary><div class="project-detail"><p><strong>Purpose</strong> Reimagine Battleship as a hybrid game about historical naval battles.</p><p><strong>Role</strong> Developer and interaction designer in a university team.</p><p><strong>Technology</strong> Python, OpenCV, PyGame, image processing, and projection mapping.</p><p><strong>Learning</strong> Play can make education tangible, while physical interaction demands careful user testing.</p><a href="PDF/P3.pdf" target="_blank" rel="noreferrer">Read project PDF ↗</a></div></details>
+            <details><summary><span>Arduino · Audio</span><strong class="project-title">Sound-Box</strong><span class="project-intro">Immersive audio for tabletop games.</span></summary><div class="project-detail"><p><strong>Purpose</strong> Add atmosphere to tabletop role-playing by mapping player actions to ambient sound.</p><p><strong>Role</strong> Developer and experience designer in a university team.</p><p><strong>Technology</strong> Arduino, C/C++, physical controls, and custom audio logic.</p><p><strong>Learning</strong> Hardware and experience design work best together when feedback feels immediate and emotional.</p><a href="PDF/P4.pdf" target="_blank" rel="noreferrer">Read project PDF ↗</a></div></details>
+            <details><summary><span>Unity · VR</span><strong class="project-title">Rock Art</strong><span class="project-intro">A hand-tracked cultural experience.</span></summary><div class="project-detail"><p><strong>Purpose</strong> Let visitors experience prehistoric rock carving through gestures in VR.</p><p><strong>Role</strong> Developer and interaction designer in a university team.</p><p><strong>Technology</strong> Unity, C#, virtual reality, and hand tracking.</p><p><strong>Learning</strong> Intuitive spatial interaction can make cultural history feel tactile and immediate.</p><a href="PDF/P6.pdf" target="_blank" rel="noreferrer">Read project PDF ↗</a></div></details>
+            <details><summary><span>TensorFlow · ML</span><strong class="project-title">Timbre Transfer</strong><span class="project-intro">Neural transformation of musical sound.</span></summary><div class="project-detail"><p><strong>Purpose</strong> Compare how generative neural models transform musical timbre.</p><p><strong>Role</strong> Developer and researcher in a university team.</p><p><strong>Technology</strong> Python, TensorFlow, autoencoders, signal processing, and user testing.</p><p><strong>Learning</strong> Imperfect audio data needs both technical care and creative resilience.</p><a href="PDF/P7.pdf" target="_blank" rel="noreferrer">Read project PDF ↗</a></div></details>
+            <details><summary><span>Unreal · C++</span><strong class="project-title">Architectural VR</strong><span class="project-intro">Exploring sustainable design in VR.</span></summary><div class="project-detail"><p><strong>Purpose</strong> Help users explore sustainable architecture and share feedback through a VR walkthrough.</p><p><strong>Role</strong> Developer and experience designer in a university team.</p><p><strong>Technology</strong> Unreal Engine, C++, virtual reality, and interactive environments.</p><p><strong>Learning</strong> Spatial layout has a direct effect on clarity, exploration, and understanding.</p><a href="PDF/P8.pdf" target="_blank" rel="noreferrer">Read project PDF ↗</a></div></details>
+            <details><summary><span>Unreal · Interaction</span><strong class="project-title">Thrust Pointing</strong><span class="project-intro">Full-body pointing for virtual reality.</span></summary><div class="project-detail"><p><strong>Purpose</strong> Explore whether a forward thrust can replace button-based pointing in VR.</p><p><strong>Role</strong> Developer and interaction researcher in a university team.</p><p><strong>Technology</strong> Unreal Engine, C++, VR interaction, and comparative user studies.</p><p><strong>Learning</strong> Mapping physical motion to intent changes both usability and the feeling of embodiment.</p><a href="PDF/P10.pdf" target="_blank" rel="noreferrer">Read project PDF ↗</a></div></details>
           </div>
         </section>
       </div>
