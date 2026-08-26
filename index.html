@@ -4,59 +4,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script>document.documentElement.classList.add("js");</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="testing.css?v=21">
-  <script src="script.js?v=5" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="testing.css?v=36">
   <script async src="https://betterlytics.io/analytics.js" data-site-id="sangmee-mrgqpcd5"></script>
-  <title>Mikkel Sang Mee Baunsgaard - Port folio</title>
+  <title>Mikkel Sang Mee Baunsgaard — Portfolio</title>
 </head>
 
 <body>
-  <nav class="section-rail" aria-label="Section progress">
-    <a href="#home" data-section-marker="home" aria-label="Hero"><span>Hero</span></a>
-    <a href="#about" data-section-marker="about" aria-label="About"><span>About</span></a>
-    <a href="#life" data-section-marker="life" aria-label="Life"><span>Life</span></a>
-    <a href="#work" data-section-marker="work" aria-label="Work"><span>Work</span></a>
-    <a href="#skills" data-section-marker="skills" aria-label="Toolkit"><span>Toolkit</span></a>
-    <a href="#contact" data-section-marker="contact" aria-label="Contact"><span>Contact</span></a>
-  </nav>
-
+  <a class="skip-link" href="#home">Skip navigation</a>
   <header class="site-header">
     <nav class="nav" aria-label="Primary navigation">
-      <a class="brand" href="/">Mikkel Sang Mee</a>
+      <a class="brand" href="#home">Index / Sang Mee</a>
       <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#life">Life</a>
-        <a href="#work">Work</a>
-        <a href="#contact">Contact</a>
+        <a href="#about">01 About</a>
+        <a href="#life">02 Life</a>
+        <a href="#work">03 Work</a>
+        <a href="#skills">04 Toolkit</a>
+        <a href="#contact">05 Contact</a>
       </div>
     </nav>
 
     <section id="home" class="hero" aria-labelledby="hero-title" data-rail-section>
       <div class="hero-copy">
         <p class="eyebrow">Software Developer &amp; Medialogist</p>
-        <h1 id="hero-title" class="typewriter-group" aria-label="Hi, I am Mikkel. Curious, social, and happiest when ideas become useful.">
-          <span data-typewriter-item>Hi, I am Mikkel.</span>
-          <span data-typewriter-item><strong>Curious</strong>, <em>social</em>, and happiest when ideas become <strong>useful</strong>.</span>
-        </h1>
-        <p class="hero-text">
-          I work at the intersection of <strong>technology</strong>, <em>users</em>, and business needs. Just as importantly, I bring <strong>energy</strong>,
-          openness, and a genuine interest in the people I build things with.
-        </p>
+        <h1 id="hero-title"><span>Mikkel</span> <span>Sang Mee</span></h1>
+        <p class="hero-intro">I build software around <strong>people</strong>—connecting technology, users, and business needs.</p>
+        <p class="hero-text">Hi, I'm Mikkel. <strong>Curious</strong>, <em>social</em>, and happiest when ideas become <strong>useful</strong>.</p>
         <div class="hero-actions">
-          <a class="button primary" href="#about">Meet me</a>
-          <a class="button secondary" href="mailto:baunsgaard38@gmail.com">Get in touch</a>
+          <a class="button primary" href="#work">View selected work</a>
+          <a class="button secondary" href="mailto:baunsgaard38@gmail.com">Contact</a>
         </div>
       </div>
 
-      <div class="portrait-wrap" aria-label="Portrait of Mikkel Sang Mee Baunsgaard">
+      <div class="portrait-wrap">
         <img src="me.png" alt="Portrait of Mikkel Sang Mee Baunsgaard">
-        <span class="orbit-note note-one">social</span>
-        <span class="orbit-note note-two">curious</span>
-        <span class="orbit-note note-three">hands-on</span>
+        <span class="orbit-note note-one" aria-hidden="true">social</span>
+        <span class="orbit-note note-two" aria-hidden="true">curious</span>
+        <span class="orbit-note note-three" aria-hidden="true">hands-on</span>
       </div>
     </section>
   </header>
@@ -64,8 +50,9 @@
   <main>
     <section id="about" class="section about-section" aria-labelledby="about-title" data-rail-section>
       <div class="section-heading">
-        <p class="eyebrow">Who you get</p>
-        <h2 id="about-title">An outgoing developer who likes <strong>clarity</strong>, <em>momentum</em>, and good conversations.</h2>
+        <p class="chapter-number">01 / About</p>
+        <h2 id="about-title">Who you get.</h2>
+        <p class="chapter-note">Social. Curious. Calm ownership.</p>
       </div>
 
       <div class="value-flow">
@@ -77,10 +64,7 @@
           </div>
           <span>01</span>
           <h3>Social by nature</h3>
-          <p>
-            I enjoy meeting people, asking questions, and making <strong>collaboration</strong> feel easy. Work gets better when people
-            feel comfortable sharing what they know.
-          </p>
+          <p>I make <strong>collaboration</strong> feel easy and questions welcome.</p>
         </article>
         <article class="value-item">
           <div class="value-signal signal-curious" aria-hidden="true">
@@ -90,10 +74,7 @@
           </div>
           <span>02</span>
           <h3>Curious in practice</h3>
-          <p>
-            I like understanding systems from both sides: the <em>technical architecture</em> behind them and the people who
-            need them to make sense.
-          </p>
+          <p>I explore both the <em>system</em> and the people using it.</p>
         </article>
         <article class="value-item">
           <div class="value-signal signal-calm" aria-hidden="true">
@@ -103,97 +84,140 @@
           </div>
           <span>03</span>
           <h3>Calm ownership</h3>
-          <p>
-            I care about <strong>maintainable solutions</strong>, clear communication, and taking responsibility without making things
-            heavier than they need to be.
-          </p>
+          <p><strong>Clear, maintainable</strong> solutions without unnecessary weight.</p>
         </article>
       </div>
     </section>
 
     <section id="life" class="section life-section" aria-labelledby="life-title" data-rail-section>
       <div class="section-heading">
-        <p class="eyebrow">Outside the editor</p>
-        <h2 id="life-title">A lot of my best energy comes from <strong>movement</strong>, <em>music</em>, and being around people.</h2>
+        <p class="chapter-number">02 / Life</p>
+        <h2 id="life-title">Outside the editor.</h2>
+        <p class="chapter-note">Movement, music, and people.</p>
       </div>
 
       <div class="life-grid">
         <article class="life-item disc">
           <span>01</span>
           <h3>Disc golf</h3>
-          <p>Fresh air, <em>small adjustments</em>, and the satisfaction of a clean throw.</p>
+          <p>Fresh air and <em>small adjustments</em>.</p>
         </article>
         <article class="life-item run">
           <span>02</span>
           <h3>Running</h3>
-          <p>A simple way to <strong>reset</strong>, think clearly, and keep momentum in the week.</p>
+          <p>A simple way to <strong>reset</strong>.</p>
         </article>
         <article class="life-item boulder">
           <span>03</span>
           <h3>Bouldering</h3>
-          <p><strong>Problem solving</strong> with your whole body, which is probably why it fits me so well.</p>
+          <p><strong>Problem solving</strong> with your whole body.</p>
         </article>
         <article class="life-item records">
           <span>04</span>
           <h3>Records</h3>
-          <p>Putting on a record <em>slows the room down</em> in the best possible way.</p>
+          <p>A good way to <em>slow the room down</em>.</p>
         </article>
       </div>
     </section>
 
     <section id="work" class="section work-section" aria-labelledby="work-title" data-rail-section>
       <div class="section-heading">
-        <p class="eyebrow">Professional shape</p>
-        <h2 id="work-title"><strong>Full-stack</strong> development with a strong interest in <em>intuitive</em> user experiences.</h2>
+        <p class="chapter-number">03 / Work</p>
+        <h2 id="work-title">Build. Shape. Share.</h2>
+        <p class="chapter-note">Full-stack craft with an eye for intuitive experiences.</p>
       </div>
 
       <div class="work-layout">
-        <div class="profile-copy" aria-live="polite">
-          <div class="work-tags" aria-label="Current work focus">
-            <span>Systems</span>
-            <span>APIs</span>
-            <span>Frontend</span>
+        <section class="experience-block" aria-labelledby="experience-title">
+          <div class="work-subheading">
+            <p>Recent experience / 2024—now</p>
+            <h3 id="experience-title">Enterprise systems to client delivery.</h3>
           </div>
-          <p id="work-copy-primary">
-            My background combines <strong>software development</strong>, Medialogy, UX understanding, and communication. I have worked
-            with backend systems, APIs, databases, frontend implementation, QA, and collaboration with stakeholders.
-          </p>
-          <p id="work-copy-secondary">
-            The common thread is simple: I like turning <em>complex requirements</em> into usable products that people can
-            understand, trust, and maintain.
-          </p>
-        </div>
+          <div class="experience-list">
+            <article>
+              <span>2026—Now</span>
+              <div><p>Keramikværkstedet Viborg</p><h4>Freelance Web &amp; E-commerce Consultant</h4></div>
+              <p>Led the website from Figma and platform selection through Dandomain implementation, launch, and ongoing support.</p>
+            </article>
+            <article>
+              <span>2026</span>
+              <div><p>Netcompany</p><h4>IT Consultant · Full-stack Developer</h4></div>
+              <p>Built enterprise features with Java, Spring Boot, React, TypeScript, PostgreSQL, and MongoDB.</p>
+            </article>
+            <article>
+              <span>2024—25</span>
+              <div><p>Skagenfood</p><h4>IT Worker</h4></div>
+              <p>Improved CMS/PIM workflows, webshop content, and internal processes with JavaScript tools.</p>
+            </article>
+            <article>
+              <span>2024</span>
+              <div><p>Netcompany</p><h4>IT Consultant · Backend Developer</h4></div>
+              <p>Designed a C# and Entity Framework Core solution for payment-agreement migration and integration.</p>
+            </article>
+          </div>
+        </section>
 
         <div class="competence-list" aria-label="Key competences">
-          <button class="competence-card is-active" type="button" data-work-key="build" aria-pressed="true">
+          <article class="competence-card">
             <span class="competence-kicker">Build</span>
             <span class="competence-content">
               <strong class="competence-title">Full-stack development</strong>
               <span class="competence-text">Backend, frontend, databases, APIs, testing, and deployment workflows.</span>
             </span>
-          </button>
-          <button class="competence-card" type="button" data-work-key="shape" aria-pressed="false">
+          </article>
+          <article class="competence-card">
             <span class="competence-kicker">Shape</span>
             <span class="competence-content">
               <strong class="competence-title">Architecture &amp; quality</strong>
               <span class="competence-text">Maintainable architecture, reusable solutions, documentation, and long-term software quality.</span>
             </span>
-          </button>
-          <button class="competence-card" type="button" data-work-key="share" aria-pressed="false">
+          </article>
+          <article class="competence-card">
             <span class="competence-kicker">Share</span>
             <span class="competence-content">
               <strong class="competence-title">Collaboration</strong>
               <span class="competence-text">Comfortable working with developers, designers, stakeholders, and clients in agile environments.</span>
             </span>
-          </button>
+          </article>
         </div>
+
+        <dl class="direction-strip" aria-label="Current direction">
+          <div><dt>Based in</dt><dd>Aalborg, Denmark</dd></div>
+          <div><dt>Looking for</dt><dd>Meaningful software work</dd></div>
+          <div><dt>Goal</dt><dd>Learn · contribute · improve</dd></div>
+        </dl>
+
+        <section class="project-shelf" aria-labelledby="project-shelf-title">
+          <article class="featured-project">
+            <p>Selected client work / 2026</p>
+            <div>
+              <span>Figma · Dandomain · PHP · HTML/CSS</span>
+              <h3 id="project-shelf-title">Keramikværkstedet Viborg</h3>
+              <p>From initial concept and platform research to implementation, launch, and ongoing operation.</p>
+            </div>
+            <a href="https://keramikværkstedetviborg.dk/" target="_blank" rel="noreferrer">Visit live site ↗</a>
+          </article>
+          <div class="project-shelf-heading">
+            <p>University project archive / 01–06</p>
+            <h3>Earlier interactive systems</h3>
+          </div>
+          <div class="project-grid">
+            <article><span>OpenCV · Play</span><h4>Battleships</h4><p>Teaching history through physical-digital play.</p><a href="PDF/P3.pdf" target="_blank" rel="noreferrer" aria-label="View Battleships project PDF">View PDF ↗</a></article>
+            <article><span>Arduino · Audio</span><h4>Sound-Box</h4><p>Immersive audio for tabletop games.</p><a href="PDF/P4.pdf" target="_blank" rel="noreferrer" aria-label="View Sound-Box project PDF">View PDF ↗</a></article>
+            <article><span>Unity · VR</span><h4>Rock Art</h4><p>A hand-tracked cultural experience.</p><a href="PDF/P6.pdf" target="_blank" rel="noreferrer" aria-label="View Rock Art project PDF">View PDF ↗</a></article>
+            <article><span>TensorFlow · ML</span><h4>Timbre Transfer</h4><p>Neural transformation of musical sound.</p><a href="PDF/P7.pdf" target="_blank" rel="noreferrer" aria-label="View Timbre Transfer project PDF">View PDF ↗</a></article>
+            <article><span>Unreal · C++</span><h4>Architectural VR</h4><p>Exploring sustainable design in VR.</p><a href="PDF/P8.pdf" target="_blank" rel="noreferrer" aria-label="View Architectural VR project PDF">View PDF ↗</a></article>
+            <article><span>Unreal · Interaction</span><h4>Thrust Pointing</h4><p>Full-body pointing for virtual reality.</p><a href="PDF/P10.pdf" target="_blank" rel="noreferrer" aria-label="View Thrust Pointing project PDF">View PDF ↗</a></article>
+          </div>
+        </section>
       </div>
     </section>
 
     <section id="skills" class="section skills-section" aria-labelledby="skills-title" data-rail-section>
       <div class="section-heading">
-        <p class="eyebrow">Toolkit</p>
-        <h2 id="skills-title">The <strong>technical tools</strong> I use, and the <em>working habits</em> I bring with me.</h2>
+        <p class="chapter-number">04 / Toolkit</p>
+        <h2 id="skills-title">Tools × habits.</h2>
+        <p class="chapter-note">What I use and how I work.</p>
       </div>
 
       <div class="skill-stream" aria-label="Technical tools and working habits">
@@ -263,24 +287,27 @@
 
   <footer id="contact" class="footer" data-rail-section>
     <div class="footer-intro">
-      <p class="eyebrow">Get in touch</p>
-      <h2>Always open to a good chat about <strong>software</strong>, people, <em>music</em>, sport, or where the next idea could go.</h2>
+      <p class="chapter-number">05 / Contact</p>
+      <h2>Let's talk.</h2>
       <p class="footer-note">
-        The easiest way to start is usually a small message: what you are building, what feels unclear, or what kind of conversation would be useful.
-        I like notes that leave room for a bit of context, a bit of curiosity, and a clear next step.
+        Software, people, music, sport—or wherever the next idea could go.
       </p>
     </div>
 
     <div class="contact-panel" aria-label="Contact options">
       <div class="contact-notes">
-        <p><strong>Good openings:</strong> product ideas, UX puzzles, backend questions, collaboration, music, sport, or a coffee and a loose sketch.</p>
-        <p><strong>Usually helpful:</strong> a few lines about the situation, the people involved, and what would make the next conversation worthwhile.</p>
+        <p><strong>A few lines are enough.</strong> Tell me what you are building, what feels unclear, or simply say hello.</p>
       </div>
 
       <div class="footer-links">
-        <a href="mailto:baunsgaard38@gmail.com">Mail</a>
-        <a href="https://www.linkedin.com/in/mikkel-sm-baunsgaard/" target="_blank" rel="noreferrer">LinkedIn</a>
-        <a href="https://github.com/mikk8718" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="contact-primary" href="mailto:baunsgaard38@gmail.com">
+          <span>Send me a message <small>baunsgaard38@gmail.com</small></span>
+          <b aria-hidden="true">↗</b>
+        </a>
+        <div class="contact-secondary" aria-label="Other profiles">
+          <a href="https://www.linkedin.com/in/mikkel-sm-baunsgaard/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+          <a href="https://github.com/mikk8718" target="_blank" rel="noreferrer">GitHub ↗</a>
+        </div>
       </div>
     </div>
   </footer>
